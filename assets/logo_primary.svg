@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="clipCircle">
+      <circle cx="128" cy="128" r="120"/>
+    </clipPath>
+  </defs>
+  <circle cx="128" cy="128" r="120" fill="#005F84"/>
+  <g clip-path="url(#clipCircle)">
+    <polygon points="0,0 170,0 86,256 0,256" fill="#007B66"/>
+  </g>
+  <text x="50%" y="55%" text-anchor="middle" font-family="Montserrat, Arial, Helvetica, sans-serif" font-size="96" font-weight="700" fill="white">LAT</text>
+</svg>

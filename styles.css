@@ -1,0 +1,70 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@600;700&display=swap');
+
+:root {
+  --lat-green: #007B66;
+  --lat-blue: #005F84;
+  --lat-gold: #E8B10C;
+  --lat-text: #1C1E21;
+  --lat-muted: #6B7280;
+  --lat-bg: #F3F4F6;
+  --radius: 14px;
+  --shadow: 0 10px 20px rgba(0,0,0,.06);
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color: var(--lat-text); background: var(--lat-bg); }
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+header { background: #fff; position: sticky; top: 0; z-index: 20; border-bottom: 1px solid #e5e7eb; }
+.nav { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; gap: 16px; }
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.brand img { width: 40px; height: 40px; }
+.brand span { font-family: Montserrat, sans-serif; font-weight: 700; font-size: 18px; letter-spacing: .4px; }
+nav a { color: var(--lat-text); text-decoration: none; margin: 0 10px; padding: 8px 10px; border-radius: 10px; }
+nav a:hover { background: #f1f5f9; }
+.cta { background: var(--lat-green); color: white; padding: 10px 16px; border-radius: 12px; text-decoration: none; font-weight: 600; }
+.cta:hover { background: #006854; }
+
+.hero { background: linear-gradient(145deg,#fff 0%,#f7fafc 40%, #eef7f5 100%); }
+.hero .wrap { display: grid; grid-template-columns: 1.2fr 1fr; gap: 28px; padding: 40px 0; align-items: center; }
+h1 { font-family: Montserrat, sans-serif; font-size: 44px; line-height: 1.15; margin: 0 0 14px; }
+.subtitle { color: var(--lat-muted); font-size: 18px; margin-bottom: 22px; }
+.hero-card { background: #fff; border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow); border: 1px solid #e5e7eb; }
+.badges { display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap; }
+.badge { padding: 6px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; }
+.badge.green { background: rgba(0,123,102,.12); color: var(--lat-green); }
+.badge.gold { background: rgba(232,177,12,.12); color: var(--lat-gold); }
+.badge.blue { background: rgba(0,95,132,.12); color: var(--lat-blue); }
+
+.section-title { font-family: Montserrat, sans-serif; font-size: 28px; margin: 0 0 14px; }
+.cards { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
+.card { background: #fff; border: 1px solid #e5e7eb; border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; display: flex; flex-direction: column; }
+.card .thumb { height: 140px; background: linear-gradient(135deg, var(--lat-blue), var(--lat-green)); position: relative; }
+.card .thumb::after { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(90deg, rgba(255,255,255,.08), rgba(255,255,255,.08) 2px, transparent 2px, transparent 6px); }
+.card .body { padding: 16px; display: flex; flex-direction: column; gap: 10px; }
+.card h3 { font-size: 18px; margin: 0; }
+.card p { margin: 0; color: var(--lat-muted); font-size: 14px; }
+.card a { color: var(--lat-blue); font-weight: 600; text-decoration: none; }
+.card a:hover { text-decoration: underline; }
+
+.news { padding: 26px 0 10px; }
+.news .cards .card { min-height: 280px; }
+
+.cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn-outline { border: 2px solid var(--lat-blue); color: var(--lat-blue); padding: 10px 16px; border-radius: 12px; text-decoration: none; font-weight: 600; }
+.btn-outline:hover { background: #e6f3f8; }
+
+footer { margin-top: 28px; background: #0f172a; color: #e2e8f0; }
+.footer-wrap { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 20px; padding: 24px 0; }
+footer h4 { margin: 0 0 10px; font-family: Montserrat, sans-serif; }
+footer a { color: #cbd5e1; text-decoration: none; display: block; padding: 6px 0; }
+footer a:hover { color: white; }
+.copy { border-top: 1px solid #243044; padding: 12px 0; color: #94a3b8; font-size: 14px; }
+
+@media (max-width: 980px) {
+  .hero .wrap { grid-template-columns: 1fr; }
+  .cards { grid-template-columns: 1fr; }
+  .footer-wrap { grid-template-columns: 1fr; }
+}
