@@ -1,13 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <clipPath id="clipCircle">
-      <circle cx="128" cy="128" r="120"/>
-    </clipPath>
-  </defs>
-  <circle cx="128" cy="128" r="120" fill="#005F84"/>
-  <g clip-path="url(#clipCircle)">
-    <polygon points="0,0 170,0 86,256 0,256" fill="#007B66"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs><style>.a{fill:#007B66}.b{fill:#005F84}.c{fill:#fff}</style></defs>
+  <circle cx="128" cy="128" r="128" class="b"/>
+  <path d="M0 128A128 128 0 0 0 222.6 40.5L128 128Z" class="a"/>
+  <g>
+    <path d="M60 160V96h20v44h28v20H60z" class="c"/>
+    <path d="M112 160l16-40 16 40h-12l-4-10-4 10h-12zM126 138l-2 6h4z" class="c"/>
+    <path d="M168 116v44h-20v-44h-16v-20h52v20h-16z" class="c"/>
   </g>
-  <text x="50%" y="55%" text-anchor="middle" font-family="Montserrat, Arial, Helvetica, sans-serif" font-size="96" font-weight="700" fill="white">LAT</text>
+  <circle cx="128" cy="128" r="70" fill="none" stroke="#E8B10C" stroke-width="10"/>
 </svg>
