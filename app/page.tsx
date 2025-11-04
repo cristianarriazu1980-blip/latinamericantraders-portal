@@ -55,18 +55,18 @@ export default function LATPortal() {
 function TopNav() {
   return (
     <header className="sticky top-0 z-40 backdrop-blur bg-white/80 border-b">
-      <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <div className="w-9 h-9 rounded-2xl bg-gray-900 text-white grid place-items-center font-bold">LT</div>
-          <span className="font-semibold">latinamericantraders.com</span>
-        </div>
-        <nav className="hidden md:flex items-center gap-6 text-sm">
-          <a href="#markets" className="hover:opacity-70">Mercados</a>
-          <a href="#news" className="hover:opacity-70">Noticias</a>
-          <a href="#hub" className="hover:opacity-70">Publicar</a>
-        </nav>
-        <a href="#hub" className="px-4 py-2 rounded-2xl bg-gray-900 text-white text-sm">Enviar propuesta</a>
-      </div>
+      <div className="flex items-center gap-2">
+  <Image
+    src="/logo_primary.svg"
+    alt="Latin American Traders"
+    width={32}
+    height={32}
+  />
+  <span className="font-semibold text-sm sm:text-base text-slate-900">
+    latinamericantraders.com
+  </span>
+</div>
+
     </header>
   );
 }
