@@ -4,6 +4,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { Globe2, Rss, BarChart3, Clock, Shield, Newspaper, Mail, Send, ExternalLink, Settings } from "lucide-react";
+import Image from "next/image";
 
 /**
  * latinamericantraders.com — Info Portal MVP
